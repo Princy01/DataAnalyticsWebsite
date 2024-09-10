@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>Data Analytics Specialization Registration</title>
+</head>
+<body bgcolor="black">
+
+    <!-- Heading Section -->
+    <h1 style="color: white; text-align: center;">Data Analytics Specialization Course Registration</h1>
+    <p style="color: lightgray; text-align: center;">
+        Please fill out the form below to register for our Data Analytics specialization course. This course covers a wide range of topics, including data visualization, predictive modeling, and machine learning.
+    </p>
+
+    <!-- Registration Form -->
+    <form action="/submit_registration" method="POST" style="max-width: 600px; margin: auto; padding: 20px; border: 2px solid darkslateblue; background-color: white;">
+        
+        <!-- Single-line Text Input -->
+        <font color=" darkslateblue">First name:</font><br>
+        <input type = "text" name = "first_name"  maxlength="50" placeholder="Enter your first name"/><br><br>
+
+        <!-- Email and Password Input Controls -->
+        <font color=" darkslateblue">Last name:</font><br>
+        <input type="email" name="email" maxlength="50" placeholder="Enter your email"/><br><br>
+
+        <font color=" darkslateblue">Create password:</font><br>
+        <input type="password" name="password" maxlength="20" placeholder="Create a password" /><br><br>
+
+        <!-- Multiple-Line Text Input Controls -->
+        <font color=" darkslateblue">Why do you want to study Data Analytics?</font><br>
+        <textarea name="description" rows="5" cols="40" placeholder="Write about your motivation for joining this course..."></textarea><br><br>
+
+        <!-- Checkbox Controls -->
+        <font color=" darkslateblue">What topics are you most interested in?</font><br>
+        <input type="checkbox" name="topics" value="visualization" /> Data Visualization<br>
+        <input type="checkbox" name="topics" value="predictive_modeling" /> Predictive Modeling<br>
+        <input type="checkbox" name="topics" value="machine_learning" /> Machine Learning<br>
+        <input type="checkbox" name="topics" value="statistics" /> Statistics<br><br>
+
+        <!-- Radio Button Controls -->
+        <font color=" darkslateblue">Preferred Learning Mode:</font><br>
+        <input type="radio" name="learning_mode" value="online" /> Online<br>
+        <input type="radio" name="learning_mode" value="in-person" /> In-Person<br><br>
+
+        <!-- Select Box Control -->
+        <font color=" darkslateblue">Your Experience Level in Data Analytics:</font><br>
+        <select name="experience">
+            <option value="beginner" selected>Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+        </select><br><br>
+
+        <!-- File Upload Box -->
+        <font color=" darkslateblue">Upload Your Profile Picture:</font><br>
+        <input type="file" name="fileupload" accept="image/*" /><br><br>
+
+        <!-- Button Controls -->
+        <input type="submit" value="Register" style="background-color: lightgray;"/>
+        <input type="reset" value="Reset Form" />
+        <input type="button" value="Help" onclick="alert('For help, contact support@dataanalytics.com')" style="background-color: lightgray; padding: 10px; border: none; cursor: pointer;" />
+    </form>
+
+</body>
+</html>
